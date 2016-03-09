@@ -13,4 +13,4 @@
   (with-open-file (out (ensure-directories-exist *output-path*)
                        :direction :output
                        :if-exists :supersede)
-    (write-string (ps-compile-file "script.paren") out)))
+    (write-string (ps-compile-file "script.lisp") out)))
